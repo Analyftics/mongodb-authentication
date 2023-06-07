@@ -1,0 +1,105 @@
+/* General configuration */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Heading */
+.picture-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.picture-eclipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.picture-wrapper > h1 {
+  font-weight: lighter;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.picture-wrapper > img {
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Content */
+.content-wrapper {
+  padding: 50px;
+}
+
+.content-wrapper > h3 {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+/* Adaptivity */
+
+/* 2Xl / TV */
+@media only screen and (max-width: 9999px) {
+  * {
+    font-size: 26px;
+  }
+
+  .picture-wrapper {
+    height: 400px;
+  }
+}
+
+/* XL / Desktop */
+@media only screen and (max-width: 1200px) {
+  * {
+    font-size: 24px;
+  }
+
+  .picture-wrapper {
+    height: 380px;
+  }
+}
+
+/* LG / Laptop */
+@media only screen and (max-width: 1024px) {
+  * {
+    font-size: 20px;
+  }
+
+  .picture-wrapper {
+    height: 350px;
+  }
+}
+
+/* MD / Tablets */
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 18px;
+  }
+}
+
+/* SM / Phone */
+@media only screen and (max-width: 480px) {
+  * {
+    font-size: 16px;
+  }
+}
